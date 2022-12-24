@@ -7,7 +7,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 DEBUG = True
 
 DATABASE_URI = 'postgresql+psycopg2://{dbuser}:{dbpass}@{dbhost}/{dbname}'.format(
-    dbuser=os.environ['DBUSER'],
+    dbuser=os.environ['DBUSER-NTT'],
     dbpass=os.environ['DBPASS'],
     dbhost=os.environ['DBHOST'],
     dbname=os.environ['DBNAME']
